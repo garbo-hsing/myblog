@@ -1,6 +1,8 @@
 package com.garbo.controller;
 
 
+import com.garbo.common.lang.Result;
+import com.garbo.entity.User;
 import com.garbo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -27,8 +29,9 @@ public class UserController {
     }
 
     @RequestMapping("/{id}")
-    public Object test(@PathVariable("id") Long id) {
-        return userService.getUserById(id);
+    public String test(@PathVariable("id") Long id) {
+        User user = userService.getById(1L);
+        return Result.succeed(user);
     }
 
 }

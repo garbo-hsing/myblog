@@ -1,5 +1,6 @@
 package com.garbo;
 
+import com.garbo.common.lang.Result;
 import com.garbo.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,6 @@ class BackendApplicationTests {
 
     @Test
     void contextLoads() {
-        System.out.println(userMapper.selectById(1l));
+        System.out.println(Result.succeed(userMapper.getUserById(1L)));
     }
-
 }

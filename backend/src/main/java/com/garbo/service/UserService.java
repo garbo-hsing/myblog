@@ -12,10 +12,4 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2021-01-11
  */
 public interface UserService extends IService<User> {
-    /**
-     * 通过id获取用户
-     * @param id
-     * @return
-     */
-    User getUserById(Long id);
 }
