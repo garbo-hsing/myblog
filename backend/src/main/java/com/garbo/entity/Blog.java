@@ -9,11 +9,11 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author garbo
@@ -24,7 +24,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @TableName("b_blog")
-@ApiModel(value="Blog对象", description="")
+@ApiModel(value = "Blog对象", description = "")
 public class Blog implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -55,11 +55,11 @@ public class Blog implements Serializable {
 
     @ApiModelProperty(value = "创建时间")
     @TableField(fill = FieldFill.INSERT)
-    private LocalDateTime gmtCreate;
+    private Date gmtCreate;
 
     @ApiModelProperty(value = "更新时间")
     @TableField(fill = FieldFill.INSERT_UPDATE)
-    private LocalDateTime gmtModified;
+    private Date gmtModified;
 
 
 }

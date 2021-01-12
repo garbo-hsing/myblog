@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * <p>
@@ -61,11 +62,11 @@ public class User implements Serializable {
 
     @ApiModelProperty(value = "创建时间")
     @TableField(fill = FieldFill.INSERT)
-    private LocalDateTime gmtCreate;
+    private Date gmtCreate;
 
     @ApiModelProperty(value = "更新时间")
     @TableField(fill = FieldFill.INSERT_UPDATE)
-    private LocalDateTime gmtModified;
+    private Date gmtModified;
 
 
 }
