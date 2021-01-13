@@ -4,8 +4,8 @@ spring:
     url: jdbc:mysql://localhost:3306/blog_1?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
     password: garbohsing
-#    type: com.alibaba.druid.pool.DruidDataSource
-#
+    type: com.alibaba.druid.pool.DruidDataSource
+
 mybatis-plus:
   type-aliases-package: com.garbo.entity
   mapper-locations: classpath*:/mapper/**Mapper.xml
