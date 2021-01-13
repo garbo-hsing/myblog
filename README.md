@@ -11,5 +11,5 @@
 - mybatis plus
 - shiro
 - redis
-- swagger
+- swagger2
 
